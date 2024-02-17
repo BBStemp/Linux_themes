@@ -113,13 +113,13 @@ function config_grub() {
 
     #--------------------------------------------------
 
-    echo_primary 'Setting grub timeout to 60 seconds'
+    echo_primary 'Setting grub timeout to 4 seconds'
     # remove default timeout if any
     echo_info "sed -i '/GRUB_TIMEOUT=/d' /etc/default/grub"
     sed -i '/GRUB_TIMEOUT=/d' /etc/default/grub
 
-    echo_info "echo 'GRUB_TIMEOUT=\"60\"' >> /etc/default/grub"
-    echo 'GRUB_TIMEOUT="60"' >> /etc/default/grub
+    echo_info "echo 'GRUB_TIMEOUT=\"4\"' >> /etc/default/grub"
+    echo 'GRUB_TIMEOUT="4"' >> /etc/default/grub
 
     #--------------------------------------------------
 
